@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./files/style.css">
+  <link rel="stylesheet" href="./files/style(1).css">
+  <link rel="stylesheet" href="./flipimage/flipimage.css">
+  <title>Responsive Website!</title>
+<style>
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  
+}
+</style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="#">Tacos</a>
+            </li>
+            <li>
+              <a href="#">Beers</a>
+            </li>
+            <li>
+              <a href="#">Wines</a>
+            </li>
+            <li>
+              <a href="#">Desserts</a>
+            </li>
+            <li>
+              <a href="#">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <h1>Terry's Taco Joint</h1>
+        <p>Pretty Good Tacos!</p>
+      </header>
+        <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/tacos.jpg" alt="Paris" style="width:400px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Tacos</h2>
+      <p>$1.99</p>
+    </div>
+  </div>
+</div>
+         <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/Kombucha.jpg" alt="Paris" style="width:400px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h1>Kombucha</h2>
+      <p>$3.99</p>
+    </div>
+  </div>
+</div>
+     
+	  
+
+    </div>
+
+    <section class="features">
+	
+      <div class="feature">
+        <span class="icon">🌮</span>
+        <h3>Tacos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>Beer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🎵</span>
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+    <section class="about">      	 
+  <div class="pricing background_content">
+      <img src="./files/queso-taco.png" alt="Yummy Taco" >
+
+        <h2><mark>Featured Taco</h2>
+        <p><mark>Slim Profile, easy to hold and loaded with cheese.</p>
+        <p><mark>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+    </section></div>
+
+            <div class="pictures">
+
+    <section class="gallery">
+				<h2 class="ph2">Instant Grams</h2>
+
+      <img src="./files/201x201" alt="">
+      <img src="./files/202x202" alt="">
+      <img src="./files/203x203" alt="">
+      <img src="./files/204x204" alt="">
+      <img src="./files/205x205" alt="">
+      <img src="./files/206x206" alt="">
+      <img src="./files/207x207" alt="">
+      <img src="./files/207x208" alt="">
+      <img src="./files/207x209" alt="">
+      <img src="./files/207x210" alt="">
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+
+
+
+</body></html>
